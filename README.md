@@ -1,2 +1,2 @@
-# mydotfiles
-mydotfiles
+# dotfiles
+my dev configuration files
