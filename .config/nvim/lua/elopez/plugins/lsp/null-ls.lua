@@ -17,7 +17,6 @@ null_ls.setup({
 		formatting.stylua,
 		diagnostics.mypy,
 		diagnostics.ruff,
-		diagnostics.tflint,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
