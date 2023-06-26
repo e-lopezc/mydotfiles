@@ -98,6 +98,17 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	-- debugger --
+	use("mfussenegger/nvim-dap")
+	use({ "rcarriga/nvim-dap-ui", dependencies = "mfussenegger/nvim-dap" })
+	use({
+		"mfussenegger/nvim-dap-python",
+		dependencies = {
+			"mfussenegger/nvim-dap",
+			"rcarriga/nvim-dap-ui",
+		},
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
